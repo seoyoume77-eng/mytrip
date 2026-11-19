@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>세상의 창 · 세계여행 아틀라스</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+:root{--bg:#f8f5ed;--paper:#fffdf8;--ink:#203831;--dim:#52665e;--border:#deded2;--green:#27493d;--serif:"Nanum Myeongjo",Batang,serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.65 "Noto Sans KR",system-ui,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit;color:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b96a23;outline-offset:3px}[hidden]{display:none!important}h1,h2,h3,p{margin:0}h1,h2,.card h3,.detail h3{font-family:var(--serif);letter-spacing:-.045em}.wrap{width:min(1250px,calc(100% - 44px));margin:auto}header{border-bottom:1px solid var(--border)}.top{display:flex;align-items:center;justify-content:space-between;gap:15px;min-height:71px}.brand{font:800 25px var(--serif);white-space:nowrap}.brand span{font:22px Georgia;border:1px solid #61776a;padding:3px 8px;border-radius:50%;margin-right:8px}.nav{display:flex;gap:clamp(9px,3vw,31px);align-items:center;font-size:13px;font-weight:700}.nav button{border:0;background:none;padding:0}.hero{margin:22px 0 16px;min-height:500px;position:relative;isolation:isolate;overflow:hidden;background:#304d48;border-radius:17px;display:flex;align-items:center;color:#fff}.hero img,.hero:after{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}.hero:after{content:"";z-index:-1;background:linear-gradient(90deg,#142e28f2,#152e2890 55%,#152e2826),linear-gradient(0deg,#10282170,transparent 37%)}.hero-content{padding:42px clamp(22px,6vw,80px)}.kicker{font-size:11px;letter-spacing:.18em;font-weight:700;color:#784d29}.hero .kicker{color:#f8dca9}.hero h1{font-size:clamp(42px,7vw,90px);line-height:1.12;margin:15px 0 20px}.hero p{max-width:423px;color:#f3efe5}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:1px solid var(--border);background:var(--paper);min-height:40px;padding:7px 13px;border-radius:7px;font-size:13px;font-weight:700}.btn:hover,.chip:hover{border-color:#758f80}.primary{background:var(--green);border-color:var(--green);color:#fff}.hero .primary{background:#f4e0b9;border-color:#f4e0b9;color:#24392e}.ghost{background:#19352d88;color:white;border-color:#ffffff82}.credit{position:absolute;bottom:12px;right:12px;padding:3px 7px;background:#17372ee8;color:white;border-radius:4px;font-size:10px}.quick{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--border);background:var(--paper);border-radius:9px;overflow:hidden}.quick a{text-align:center;padding:13px 3px;font-size:13px;font-weight:700}.quick a+a{border-left:1px solid var(--border)}.quick a:hover{background:#e9eee5}.block{padding-top:52px}.heading{display:flex;justify-content:space-between;align-items:end;gap:13px;margin-bottom:17px}.heading h2{font-size:clamp(31px,4vw,52px);line-height:1.22;margin:6px 0}.heading p,.muted{color:var(--dim);font-size:13px}.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--border);background:var(--paper);border-radius:30px;padding:6px 11px;font-size:12px;white-space:nowrap}.chip[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}.filters{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0}.filters input,.filters select{background:var(--paper);border:1px solid var(--border);border-radius:7px;padding:9px 11px;font-size:13px}.filters input{flex:1;min-width:170px}#count{margin:9px 0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}.card{position:relative;border:1px solid var(--border);border-radius:12px;background:var(--paper);overflow:hidden}.card:hover{border-color:#91a594}.main-card{width:100%;height:100%;text-align:left;padding:0;border:0;background:none}.cover,.scene{display:block;position:relative;overflow:hidden;background:radial-gradient(ellipse at 80% 15%,#f3cc8977,transparent 55%),linear-gradient(135deg,#31564c,#759087 60%,#b8ac82)}.cover[data-tonal="예술"],.scene[data-tonal="예술"]{background:linear-gradient(130deg,#73554e,#b58c75,#ddc891)}.cover[data-tonal="자연"],.scene[data-tonal="자연"]{background:linear-gradient(130deg,#284849,#648f8b,#b5c9aa)}.cover{height:191px}.cover:before,.scene:before{content:attr(data-title);position:absolute;bottom:10px;left:13px;color:white;font:italic 25px Georgia;letter-spacing:.03em}.cover img,.scene img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.copy{display:block;padding:13px 16px 17px}.card h3{font-size:28px;margin:4px 0}.card p{font-size:13px;color:var(--dim)}.card small,.meta{font-size:11px;font-weight:700;color:#785132}.heart{position:absolute;right:10px;top:10px;background:#fffdf7f2;border:1px solid #d9d9cd;border-radius:50%;width:35px;height:35px;font-size:19px;line-height:1}.heart[aria-pressed=true]{color:#aa4139}.country .copy{padding-right:52px}.country h3{font-size:23px}.empty{grid-column:1/-1;padding:23px;border:1px dashed #b5bfb4;border-radius:9px}.more{display:flex;margin:17px auto 0}.reserve{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.reserve article{background:#e9eee4;border:1px solid #d9e3d8;padding:14px;border-radius:10px}.reserve h3{margin-bottom:7px}.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 13px}.links a,.empty a{border-bottom:1px solid #a3afa3;font-size:13px;font-weight:700;color:#264a3a}.links a:hover{text-decoration:underline}footer{margin-top:48px;border-top:1px solid var(--border);padding:18px 0 35px;color:var(--dim);font-size:12px}summary{cursor:pointer;font-weight:700;margin-bottom:6px}footer p{margin-top:7px}footer a{text-decoration:underline}
+dialog{position:fixed;padding:0;border:0;border-radius:14px;width:min(790px,calc(100% - 20px));max-height:calc(100% - 25px);color:var(--ink);background:var(--paper);box-shadow:0 20px 80px #1328206b}dialog::backdrop{background:#142720be}.close{position:sticky;top:10px;z-index:3;display:block;margin:10px 10px -46px auto;border:0;border-radius:50%;width:36px;height:36px;background:var(--paper);box-shadow:0 2px 9px #0003;font-size:24px}.scene{height:clamp(205px,38vw,370px)}.scene .credit{right:auto;left:10px;z-index:1}.detail-body{padding:19px clamp(18px,4vw,36px) 34px}.detail h2{font-size:clamp(33px,5vw,49px);line-height:1.2;margin:5px 0 8px}.detail h3{font-size:24px;margin-bottom:6px}.detail p{color:var(--dim)}.detail section{border-top:1px solid var(--border);padding-top:14px;margin-top:19px}.scene-controls{display:flex;justify-content:space-between;align-items:center;gap:5px;margin:11px 0}.scene-controls .btn{min-height:33px;padding:3px 9px}.btn:disabled{opacity:.35;cursor:default}.detail ol{padding-left:21px}.detail li{margin-bottom:7px}.detail li small{display:block;color:var(--dim)}.detail-cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.grid,.reserve{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:430px}}@media(max-width:485px){.wrap{width:calc(100% - 24px)}.top{min-height:60px;flex-wrap:wrap;gap:5px;padding:6px 0}.brand{font-size:20px}.brand span{font-size:15px}.nav{font-size:11px}.hero{min-height:353px;margin-top:12px}.hero-content{padding:30px 20px 47px}.hero p{font-size:13px}.quick a{font-size:11px}.heading{align-items:start;flex-direction:column}.block{padding-top:36px}.grid{gap:8px}.cover{height:115px}.copy{padding:8px}.card h3{font-size:22px}.card p{font-size:11px}.country h3{font-size:17px}.country .copy{padding-right:40px}.heart{right:6px;top:6px;width:29px;height:29px}.detail-cols{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head>
+<body><header><div class="wrap top"><a class="brand" href="#"><span aria-hidden="true">✧</span>세상의 창</a><nav class="nav" aria-label="메뉴"><a href="#explore">여행지 탐색</a><a href="#booking">예약 사이트</a><button id="savedNav">♡ 저장 <span id="savedTotal">0</span></button></nav></div></header>
+<main class="wrap">
+<section class="hero"><img src="https://upload.wikimedia.org/wikipedia/commons/4/47/View_from_Charles_Bridge_Vltava_panorama.JPG" alt="카를교에서 바라본 블타바강과 프라하 강변" fetchpriority="high"><div class="hero-content"><span class="kicker">프라하 · 블타바강</span><h1>세상의 창을<br>열어 보세요.</h1><p>프라하의 강변에서 남극의 얼음 바다까지. 사진으로 먼저 떠나고, 마음에 든 곳은 다음 여행으로 남겨 두세요.</p><div class="actions"><button class="btn primary" data-open="Prague">프라하 가상여행 →</button><a class="btn ghost" href="#explore">세계 여행지 보기</a></div></div><a class="credit" href="https://commons.wikimedia.org/wiki/File:View_from_Charles_Bridge_Vltava_panorama.JPG" target="_blank" rel="noopener noreferrer">사진 · Janmad / CC BY 3.0 ↗</a></section>
+<div id="quick" class="quick" aria-label="예약 바로가기"></div>
+<section class="block" id="explore"><div class="heading"><div><span class="kicker">세계여행 아틀라스</span><h2>어디로 떠날까요?</h2><p id="coverage"></p></div><div class="chips" id="modes" aria-label="여행지 보기"></div></div>
+<div class="chips" id="regions" aria-label="대륙"></div><div class="filters"><input id="search" type="search" aria-label="여행지 검색" placeholder="도시·국가·명소 검색 · 예: 프라하, 일본, 사그라다 파밀리아"><select id="theme" aria-label="여행 테마"><option value="">모든 테마</option><option>건축</option><option>예술</option><option>미술관·박물관</option><option>자연</option><option>미식</option><option>역사</option><option>해안</option></select></div>
+<p class="muted" id="count" aria-live="polite"></p><div id="cards" class="grid"></div><button type="button" id="more" class="btn more" hidden>더 보기 ↓</button></section>
+<section class="block" id="booking"><div class="heading"><div><h2>여행 예약 준비</h2><p>날짜와 요금, 결제는 연결된 예약 사이트에서 확인하세요.</p></div></div><div id="reserve" class="reserve"></div></section>
+<footer><strong>세상의 창</strong><details><summary>참고한 여행 사이트와 사진 출처</summary><p><a href="https://www.lonelyplanet.com/destinations" target="_blank" rel="noopener noreferrer">Lonely Planet</a>의 대륙·국가·도시 탐색, <a href="https://www.tripadvisor.com/Attractions" target="_blank" rel="noopener noreferrer">Tripadvisor</a>의 볼거리와 체험 구분, <a href="https://en.wikivoyage.org/wiki/Destinations" target="_blank" rel="noopener noreferrer">Wikivoyage</a>의 세계 여행지 색인, <a href="https://www.atlasobscura.com/destinations" target="_blank" rel="noopener noreferrer">Atlas Obscura</a>의 장소별 탐색을 참고했습니다.</p><p><a href="https://unstats.un.org/unsd/methodology/m49/overview/" target="_blank" rel="noopener noreferrer">UN M49</a>를 참고해 섬·속령을 포함한 국가·지역 색인을 여행 탐색용으로 분류했습니다. 첫 화면 사진은 <a href="https://commons.wikimedia.org/wiki/File:View_from_Charles_Bridge_Vltava_panorama.JPG" target="_blank" rel="noopener noreferrer">Janmad</a>의 <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a> 사진으로, 화면에 맞게 잘라 표시했습니다. 다른 이미지 출처는 상세 화면에서 열 수 있습니다.</p></details><p>저장 목록은 현재 브라우저에 남습니다. 온라인 사진과 외부 사이트에는 인터넷 연결이 필요합니다.</p></footer>
+</main>
+<dialog id="detail" class="detail" aria-labelledby="detailTitle"><button class="close" id="close" aria-label="상세 닫기">×</button><div id="detailContent"></div></dialog>
+<script type="text/plain" id="guideData">
+프라하|Prague|CZ|건축 역사 예술|붉은 지붕이 이어지는 구시가지와 블타바강 건너 프라하성이 한눈에 들어오는 도시예요. 아침 카를교에서는 다리 양쪽의 탑과 석상을, 해 질 무렵 강변에서는 물에 비친 도시의 윤곽을 천천히 감상해 보세요.|카를교~Charles Bridge~구시가지와 말라스트라나를 잇는 석조 다리. 두 끝의 탑과 다리 위 성인 조각상이 눈에 띄어요.;프라하성~Prague Castle~성 비투스 대성당의 스테인드글라스를 보고 옛 성 계단으로 내려오면 붉은 지붕이 이어져요.;구시가지 광장~Old Town Square~천문시계가 있는 구시청사 주변으로 틴 성당과 오래된 건물이 광장을 둘러싸고 있어요.;클레멘티눔~Clementinum~바로크 도서관과 천문탑을 둘러보는 투어가 있는 복합 건물이에요.|소고기 요리 스비치코바를 감자나 빵으로 만든 크네들리키와 함께 맛보세요. 오후에는 구시가지 카페에서 쉬어도 좋아요.|아침 프라하성 → 옛 성 계단과 말라스트라나 → 카를교 → 구시가지 광장. 도서관에 관심이 있다면 클레멘티눔 관람 시간을 따로 잡아보세요.
+바르셀로나|Barcelona|ES|건축 예술 미식 해안|가우디의 곡선, 고딕 지구의 돌 골목, 지중해 해변이 한 도시 안에서 이어져요. 건축을 충분히 보고 싶다면 사그라다 파밀리아와 구엘 공원을 중심으로 하루의 속도를 잡아보세요.|사그라다 파밀리아~Sagrada Família~탄생 파사드의 조각과 내부 기둥이 만드는 숲 같은 공간을 비교해 보세요.;구엘 공원~Park Güell~모자이크 벤치와 곡선으로 이어진 산책로에서 도시 지붕을 내려다봐요.;카사 바트요~Casa Batlló~파세이그 데 그라시아의 가우디 건축물. 외벽 타일과 물결 같은 발코니가 특징이에요.;바르셀로네타 해변~Barceloneta Beach~도심 골목을 지나 바다 쪽으로 이어지는 해안 산책로예요.|구운 빵에 토마토를 문지른 파 암 토마케트나 감자 요리 파타타스 브라바스를 타파스와 함께 나눠보세요.|오전 사그라다 파밀리아 → 구엘 공원 → 오후 카사 바트요. 해변까지 가고 싶다면 마지막에 바르셀로네타를 넣고, 주요 명소는 공식 사이트에서 입장 시간대를 확인하세요.
+교토|Kyoto|JP|역사 건축 자연|사찰과 정원, 목조 골목이 이어지는 도시예요. 동쪽과 서쪽의 주요 명소를 나눠 둘러보면 걸음을 늦출 수 있어요.|기요미즈데라~Kiyomizu-dera~언덕 위 본당에서 시내를 내려다봐요.;기온~Gion~옛 목조 건물이 늘어선 거리예요.;아라시야마~Arashiyama~가쓰라강과 대나무 숲이 만나는 곳이에요.|유도후와 말차 디저트를 맛보세요.|오전 기요미즈데라 → 산넨자카 → 오후 기온. 아라시야마는 별도의 반나절에 배치해 보세요.
+도쿄|Tokyo|JP|건축 미식 역사|오래된 사찰 앞 상점가와 현대적인 전망대가 가까운 도시예요. 하루에 동네 두세 곳만 골라도 서로 다른 도쿄가 보여요.|센소지~Sensō-ji~아사쿠사의 사찰과 나카미세 상점가를 함께 볼 수 있어요.;메이지 신궁~Meiji Shrine~숲길을 걸어 신궁에 닿아요.;시부야 스크램블 교차로~Shibuya Crossing~여러 방향의 보행자가 한꺼번에 길을 건너는 장면으로 유명해요.|동네 소바집이나 스시 가게에서 한 끼를 골라보세요.|아침 아사쿠사 → 오후 메이지 신궁 → 저녁 시부야.
+서울|Seoul|KR|역사 미식 건축|궁궐의 담장과 한옥, 도심의 물길을 한 번에 만날 수 있어요.|경복궁~Gyeongbokgung~광화문에서 근정전까지 궁궐의 중심축을 걸어요.;북촌 한옥마을~Bukchon Hanok Village~한옥 지붕이 이어지는 주거지예요.;청계천~Cheonggyecheon~도심의 낮은 물길을 따라 산책할 수 있어요.|인사동에서 전통차, 시장에서 빈대떡을 맛보세요.|경복궁 → 북촌 → 인사동 점심 → 청계천.
+제주|Jeju Island|KR|자연 해안|동쪽의 화산 지형과 돌담길 사이로 바다가 자주 드러나요.|성산일출봉~Seongsan Ilchulbong~바다에서 솟은 듯한 응회구예요.;섭지코지~Seopjikoji~들판과 바다를 옆에 두고 걷는 곶이에요.;우도~Udo (island)~성산 앞바다에 있는 섬으로 해안 풍경이 인상적이에요.|고기국수나 전복죽을 맛보고, 우도에서는 땅콩 간식을 찾아보세요.|성산일출봉 → 동쪽 마을 점심 → 섭지코지. 우도는 선박 운항을 확인해 반나절을 따로 잡으세요.
+타이베이|Taipei|TW|미식 역사|절과 시장, 현대적인 빌딩이 지하철로 연결되는 여행지예요.|룽산사~Lungshan Temple~완화의 사찰로 지붕 장식과 향 피우는 풍경을 볼 수 있어요.;타이베이 101~Taipei 101~도시를 넓게 보는 전망대로 알려져 있어요.;스린 야시장~Shilin Night Market~저녁에 여러 거리 음식을 맛볼 수 있어요.|우육면, 샤오룽바오, 후추빵을 골라보세요.|룽산사 → 시내 점심 → 타이베이 101 → 스린 야시장.
+방콕|Bangkok|TH|역사 미식 건축|차오프라야강에서 배를 타면 양쪽 강변의 사원과 도시 풍경이 한눈에 들어와요.|왕궁~Grand Palace~정교한 지붕과 장식으로 유명한 궁전 단지예요.;왓 포~Wat Pho~거대한 와불을 볼 수 있는 사원이에요.;왓 아룬~Wat Arun~강 건너편에서 중앙 탑을 바라보며 사진을 찍기 좋아요.|팟타이와 망고 찹쌀밥, 또는 보트 누들을 골라보세요.|왕궁 → 왓 포 → 배로 왓 아룬 → 강변에서 일몰.
+싱가포르|Singapore|SG|건축 미식 자연|항구의 스카이라인과 초록빛 정원, 다양한 음식 문화가 함께 있는 도시예요.|가든스 바이 더 베이~Gardens by the Bay~수퍼트리와 온실이 있는 정원이에요.;마리나 베이~Marina Bay, Singapore~수변 산책로에서 도심 빌딩을 감상해요.;싱가포르 식물원~Singapore Botanic Gardens~그늘이 있는 길과 난초 정원으로 유명해요.|호커센터에서 치킨 라이스나 락사를 맛보세요.|식물원 → 호커센터 점심 → 가든스 바이 더 베이 → 마리나 베이 야경.
+하노이|Hanoi|VN|미식 역사|호수 옆 광장과 오토바이가 이어지는 구시가지가 대비되는 도시예요.|호안끼엠 호수~Hoàn Kiếm Lake~호숫가를 따라 걷고 작은 다리 너머 사당에 가볼 수 있어요.;문묘~Temple of Literature, Hanoi~옛 교육의 역사를 보여주는 사당이에요.;탕롱 황성~Imperial Citadel of Thăng Long~여러 왕조의 흔적이 남은 유적이에요.|쌀국수와 분짜를 먹고 에그 커피를 맛보세요.|호안끼엠 호수 → 구시가지 점심 → 문묘 → 탕롱 황성.
+자이푸르|Jaipur|IN|건축 역사|분홍빛 건물, 시장, 언덕 위 요새가 모여 있는 라자스탄의 도시예요.|하와 마할~Hawa Mahal~작은 창으로 가득한 독특한 정면이 유명해요.;시티 팰리스~City Palace, Jaipur~문양과 색채가 돋보이는 궁전이에요.;암베르 요새~Amber Fort~언덕 위 요새에서 호수와 주변 능선을 바라봐요.|달 바티 추르마 또는 라자스탄식 탈리를 맛보세요.|아침 암베르 요새 → 시티 팰리스 → 하와 마할과 시장.
+두바이|Dubai|AE|건축 미식|초고층 빌딩이 밀집한 도심과 크리크 주변의 옛 상업 지구를 함께 볼 수 있어요.|부르즈 할리파~Burj Khalifa~도시의 현대적인 스카이라인을 대표해요.;두바이 크리크~Dubai Creek~수상 교통을 타고 오래된 무역항의 분위기를 느껴보세요.;알 파히디 역사 지구~Al Fahidi Historical Neighbourhood~전통 바람탑과 좁은 골목이 남아 있어요.|향신료를 곁들인 쌀 요리 마크부스나 대추야자를 맛보세요.|오전 알 파히디 → 크리크 건너 시장 → 오후 도심 전망대 주변.
+이스탄불|Istanbul|TR|건축 역사 미식|바다와 해협을 사이에 두고 여러 시대의 건축과 시장 문화가 겹쳐 보여요.|아야 소피아~Hagia Sophia~비잔틴과 오스만의 역사를 함께 품은 건축물이에요.;술탄 아흐메트 모스크~Blue Mosque, Istanbul~여러 첨탑과 돔이 구시가지의 윤곽을 만들어요.;그랜드 바자르~Grand Bazaar, Istanbul~지붕이 덮인 통로로 이어진 오랜 시장이에요.|시미트와 튀르키예식 차, 메제 요리를 곁들여보세요.|술탄아흐메트 광장 → 아야 소피아와 모스크 → 그랜드 바자르.
+파리|Paris|FR|예술 건축 미식|센강을 기준으로 미술관, 광장, 정원이 이어져 걸어서 여행하기 좋아요.|루브르 박물관~Louvre~소장품이 넓게 나뉘어 있어 보고 싶은 작품을 미리 골라보세요.;오르세 미술관~Musée d'Orsay~기차역 건물을 활용한 미술관이에요.;에펠탑~Eiffel Tower~샹드마르스에서 멀리 올려다보는 풍경도 좋아요.|빵집에서 크루아상이나 타르트를 맛보세요.|루브르 또는 오르세 한 곳 → 센강변 → 샹드마르스.
+로마|Rome|IT|역사 건축 미식|고대 유적과 분수, 작은 광장이 걷는 길 위에 겹쳐 있어요.|콜로세움~Colosseum~고대 로마의 원형 경기장이에요.;포로 로마노~Roman Forum~옛 로마의 정치·종교 중심지 흔적이 남아 있어요.;판테온~Pantheon, Rome~돔 천장 가운데 원형으로 열린 부분이 눈에 띄어요.|카초 에 페페나 카르보나라를 맛보세요.|콜로세움 → 포로 로마노 → 판테온 광장 → 저녁 산책.
+런던|London|GB|역사 예술 건축|템스강의 다리와 박물관을 중심으로 각기 다른 분위기의 동네를 만날 수 있어요.|웨스트민스터 궁전~Palace of Westminster~템스강을 따라 이어지는 의사당 건물이에요.;타워 브리지~Tower Bridge~두 탑과 들어 올릴 수 있는 다리 구조가 특징이에요.;테이트 모던~Tate Modern~옛 발전소를 활용한 현대미술관이에요.|시장 음식이나 애프터눈 티를 골라보세요.|웨스트민스터 → 사우스뱅크 → 테이트 모던 → 타워 브리지.
+리스본|Lisbon|PT|건축 미식 해안|언덕길의 타일 외벽과 테주강 쪽으로 열린 광장이 인상적인 항구 도시예요.|알파마~Alfama~언덕의 좁은 길을 따라 작은 광장과 전망이 열려요.;코메르시우 광장~Praça do Comércio~강 쪽으로 크게 열린 시내 광장이에요.;제로니무스 수도원~Jerónimos Monastery~벨렝의 대표적인 석조 건물이에요.|벨렝에서 에그타르트, 식사로 대구 요리를 맛보세요.|알파마 → 코메르시우 광장 → 오후 벨렝.
+암스테르담|Amsterdam|NL|예술 건축|운하의 작은 다리, 화려한 박물관, 좁고 높은 집들이 도시의 표정을 만들어요.|운하 지구~Canals of Amsterdam~물길과 다리를 따라 오래된 집이 이어져요.;국립미술관~Rijksmuseum~네덜란드 회화와 공예를 한곳에서 볼 수 있어요.;폰델파르크~Vondelpark~박물관 지구에서 잠깐 쉬기 좋은 공원이에요.|스트룹와플이나 청어 간식을 찾아보세요.|국립미술관 → 폰델파르크 → 운하 지구 저녁 산책.
+빈|Vienna|AT|예술 건축 역사|궁전과 음악 공연장, 커피하우스가 서로 가까워 예술 여행을 꾸리기 좋아요.|벨베데레 궁전~Belvedere, Vienna~바로크 정원과 오스트리아 회화를 만날 수 있어요.;슈테판 대성당~St. Stephen's Cathedral, Vienna~무늬가 있는 지붕이 도심에서 눈에 띄어요.;호프부르크~Hofburg~여러 시대에 걸쳐 확장된 옛 황궁이에요.|커피하우스에서 멜란주와 케이크를 골라보세요.|벨베데레 → 슈테판 대성당 → 호프부르크와 카페.
+아테네|Athens|GR|역사 건축 미식|언덕 위의 고대 유적과 그 아래 시장 골목, 야외 식당이 이어져요.|아크로폴리스~Acropolis of Athens~언덕 정상에 파르테논 신전을 비롯한 유적이 있어요.;아크로폴리스 박물관~Acropolis Museum~발굴 유물과 유적의 관계를 살펴볼 수 있어요.;플라카~Plaka~언덕 아래 도보 여행과 식사를 즐기기 좋아요.|수블라키나 그릭 샐러드를 맛보세요.|이른 아침 아크로폴리스 → 박물관 → 플라카.
+레이캬비크|Reykjavík|IS|자연 건축 해안|작은 항구와 다채로운 집, 화산암에서 영감을 받은 건축물이 어울리는 도시예요.|할그림스키르캬~Hallgrímskirkja~높게 솟은 교회 탑과 기둥의 리듬이 인상적이에요.;하르파~Harpa (concert hall)~유리 외벽이 항구의 빛을 받아 달라 보여요.;솔파르~The Sun Voyager~바다와 산을 배경으로 서 있는 조각이에요.|생선 수프나 아이슬란드식 유제품 스키르를 맛보세요.|할그림스키르캬 → 시내 점심 → 하르파 → 해안 산책.
+뉴욕|New York City|US|예술 건축|높은 빌딩 사이에서 큰 공원과 미술관, 강을 건너는 다리를 만나요.|센트럴파크~Central Park~잔디밭과 호수, 숲길이 이어져요.;메트로폴리탄 미술관~Metropolitan Museum of Art~한두 전시실을 고르면 여유 있게 감상할 수 있어요.;브루클린 브리지~Brooklyn Bridge~강 위에서 맨해튼 고층 건물을 바라봐요.|베이글이나 한 조각 피자를 골라보세요.|센트럴파크 → 메트로폴리탄 미술관 → 해 질 무렵 브루클린 브리지.
+샌프란시스코|San Francisco|US|해안 건축 역사|가파른 언덕에서 해안으로 내려가면 안개와 붉은 다리의 풍경이 열려요.|골든게이트 브리지~Golden Gate Bridge~해협 위를 가로지르는 붉은 현수교예요.;페리 빌딩~San Francisco Ferry Building~바닷가 시장과 식당이 입점한 건물이에요.;알카트라즈섬~Alcatraz Island~옛 교도소와 만의 경치를 함께 보는 섬이에요.|사워도우 빵이나 해산물 수프를 맛보세요.|골든게이트 전망 → 페리 빌딩 → 예약한 배 편에 맞춰 알카트라즈.
+밴쿠버|Vancouver|CA|자연 해안|바닷가 산책로와 도시 숲이 도심 가까이에 있어요.|스탠리 파크~Stanley Park~바다를 따라 이어지는 산책로와 숲이 있어요.;그랜빌 아일랜드~Granville Island~시장과 작은 상점이 모인 물가 구역이에요.;잉글리시 베이~English Bay (Vancouver)~해변 산책과 노을을 즐길 수 있어요.|공설 시장에서 해산물이나 베이커리를 둘러보세요.|스탠리 파크 → 그랜빌 아일랜드 → 잉글리시 베이.
+퀘벡시티|Quebec City|CA|역사 건축|성벽과 강 전망이 어우러지는 프랑스어권 도시예요.|올드 퀘벡~Old Quebec~돌길과 성벽이 남은 옛 도심이에요.;샤토 프롱트낙~Château Frontenac~강 언덕을 바라보는 지붕의 윤곽이 인상적이에요.;프티 샹플랭~Petit Champlain~아래 마을의 상점과 돌길을 둘러봐요.|메이플 디저트나 푸틴을 맛보세요.|올드 퀘벡 위쪽 마을 → 강변 전망 → 프티 샹플랭.
+멕시코시티|Mexico City|MX|예술 미식 역사|아즈텍 유적, 식민지 시대의 광장, 현대 예술이 교차하는 도시예요.|소칼로~Zócalo~대성당과 정부 건물이 둘러싼 큰 광장이에요.;국립인류학박물관~National Museum of Anthropology (Mexico)~메소아메리카의 여러 문화를 보여주는 박물관이에요.;차풀테펙 공원~Chapultepec~박물관과 숲길이 있는 도시 공원이에요.|타코 알 파스토르와 아과 프레스카를 맛보세요.|소칼로 → 차풀테펙 → 국립인류학박물관.
+아바나|Havana|CU|역사 건축 해안|색이 바랜 돌 건물과 바다 옆 방파제가 오래된 항구 도시의 분위기를 만들어요.|올드 아바나~Old Havana~광장과 건축물이 남은 옛 도심이에요.;아바나 대성당~Havana Cathedral~좁은 골목에서 광장으로 들어서면 정면이 보여요.;말레콘~Malecón, Havana~바다와 시내가 맞닿는 긴 길이에요.|검은콩과 쌀, 천천히 익힌 고기 요리를 골라보세요.|올드 아바나 광장 → 대성당 → 해 질 무렵 말레콘.
+리우데자네이루|Rio de Janeiro|BR|자연 해안|바다와 잔봉우리가 도시의 가장자리를 감싸고 있어 전망이 다채로워요.|구세주 그리스도상~Christ the Redeemer (statue)~코르코바두산 위에서 만과 도시를 내려다봐요.;슈거로프산~Sugarloaf Mountain~봉우리에서 해안 풍경이 펼쳐져요.;코파카바나~Copacabana, Rio de Janeiro~물결무늬 보도가 해변을 따라 이어져요.|치즈빵 팡지케이주나 아사이 볼을 맛보세요.|이른 코르코바두산 → 코파카바나 → 슈거로프산 전망.
+부에노스아이레스|Buenos Aires|AR|예술 미식 역사|공연장과 광장, 오래된 카페에서 도시의 음악과 생활 문화를 느껴요.|테아트로 콜론~Teatro Colón~오페라와 클래식 공연으로 알려진 극장이에요.;5월 광장~Plaza de Mayo~도시의 정치·사회 역사가 모인 광장이에요.;산텔모~San Telmo, Buenos Aires~오래된 주택가와 시장 거리가 이어져요.|엠파나다, 파리야, 둘세 데 레체 디저트를 골라보세요.|극장 주변 → 5월 광장 → 산텔모 시장.
+쿠스코|Cusco|PE|역사 건축|안데스 고지대에 잉카 석조와 식민지 시대 건물이 나란히 남아 있어요.|쿠스코 중앙광장~Plaza de Armas (Cusco)~대성당과 오래된 회랑이 광장을 둘러싸요.;코리칸차~Coricancha~정교한 잉카 석조 위로 후대 건축이 겹쳐 있어요.;삭사이와만~Sacsayhuamán~커다란 돌을 맞물려 쌓은 성벽이 남아 있어요.|시장이나 식당에서 안데스 옥수수와 감자 요리를 살펴보세요.|중앙광장 → 코리칸차 → 몸이 고도에 적응한 뒤 삭사이와만.
+카르타헤나|Cartagena, Colombia|CO|해안 건축 역사|카리브해 앞 성곽과 색색의 발코니가 이어지는 항구 도시예요.|카르타헤나 성곽 도시~Cartagena, Colombia~돌 성벽 안에서 작은 광장과 그늘진 골목을 만나봐요.;산펠리페 요새~Castillo San Felipe de Barajas~항구를 지키던 언덕 위 요새예요.;로사리오 제도~Rosario Islands~해안에서 배로 닿는 섬들이에요.|코코넛 라이스와 해산물, 아레파를 맛보세요.|성곽 안 산책 → 산펠리페 요새 → 저녁 성벽. 섬은 별도의 날에 둘러보세요.
+산티아고|Santiago|CL|자연 미식 건축|안데스산맥을 배경으로 언덕 공원과 오래된 도심이 맞닿아 있어요.|아르마스 광장~Plaza de Armas (Santiago)~수도 옛 중심지의 광장이에요.;산 크리스토발 언덕~San Cristóbal Hill~넓게 펼쳐진 시가지의 윤곽을 볼 수 있어요.;중앙시장~Mercado Central de Santiago~도심에서 현지 식문화를 만나기 좋은 시장이에요.|중앙시장에서 해산물 요리를 살펴보세요.|아르마스 광장 → 중앙시장 → 산 크리스토발 언덕.
+케이프타운|Cape Town|ZA|자연 해안 역사|평평한 산정과 대서양 해안, 색이 선명한 오래된 동네가 대비돼요.|테이블산~Table Mountain~산정의 평평한 윤곽이 도시를 대표해요.;보캅~Bo-Kaap~경사진 돌길을 따라 색색의 집이 늘어서 있어요.;빅토리아 앤드 앨프리드 워터프런트~Victoria & Alfred Waterfront~항구 풍경과 식당을 함께 만날 수 있어요.|향신료가 들어간 케이프 말레이 음식이나 보보티를 맛보세요.|산의 기상과 케이블카 운행 확인 → 보캅 → 워터프런트.
+카이로·기자|Cairo|EG|역사 건축|나일강의 큰 도시와 그 서쪽 고대 유적을 함께 만날 수 있어요.|기자 피라미드~Giza pyramid complex~여러 피라미드와 스핑크스가 있는 고대 유적이에요.;타흐리르 이집트 박물관~Egyptian Museum~도심의 오래된 이집트 고고학 박물관이에요.;칸 엘칼릴리~Khan el-Khalili~구시가지의 오래된 상점가예요.|코샤리와 차를 맛보세요.|아침 기자 → 오후 박물관 또는 칸 엘칼릴리. 박물관별 전시 위치는 공식 안내로 확인하세요.
+마라케시|Marrakesh|MA|건축 미식 역사|붉은 성벽 안의 골목과 시장, 건물 안쪽의 차분한 정원이 대비돼요.|제마 엘프나~Jemaa el-Fnaa~낮과 저녁의 분위기가 달라지는 광장이에요.;바히아 궁전~Bahia Palace~타일과 나무 천장, 안뜰 장식이 인상적이에요.;마조렐 정원~Majorelle Garden~선명한 파란색과 식물이 어우러지는 정원이에요.|민트차와 타진을 맛보세요.|바히아 궁전 → 메디나 시장 → 마조렐 정원 → 저녁 광장.
+나이로비|Nairobi|KE|자연 역사|동물 서식지와 도시의 박물관을 한 여행 안에서 둘러볼 수 있어요.|나이로비 국립공원~Nairobi National Park~도시 가까이에서 여러 야생동물의 서식 환경을 만나요.;나이로비 국립박물관~National Museums of Kenya~케냐의 자연과 문화를 살펴보는 출발점이에요.;기린 센터~Giraffe Centre~로스차일드기린의 보전과 교육을 위한 장소예요.|우갈리나 구운 고기 냐마초마를 맛보세요.|국립공원 이른 시간 → 점심 → 국립박물관 또는 기린 센터.
+잔지바르|Zanzibar City|TZ|해안 역사 미식|인도양 무역의 흔적과 스와힐리 건축이 남은 섬의 옛 항구예요.|스톤타운~Stone Town~골목의 목조 문과 여러 문화의 건축을 살펴봐요.;포로다니 정원~Forodhani Gardens~바다 쪽으로 열린 공원과 야시장으로 알려져 있어요.;옛 요새~Old Fort of Zanzibar~항구 가까이에 남은 석조 요새예요.|해산물과 향신료를 곁들인 필라우를 골라보세요.|스톤타운 골목 → 옛 요새 → 저녁 포로다니.
+시드니|Sydney|AU|건축 해안 자연|만을 오가는 페리 위에서 유명한 건물과 바다를 다른 각도로 바라볼 수 있어요.|시드니 오페라 하우스~Sydney Opera House~물가로 돌출된 하얀 지붕이 인상적이에요.;하버 브리지~Sydney Harbour Bridge~큰 철제 아치와 항구 전망이 어우러져요.;본다이 비치~Bondi Beach~해변과 해안 산책을 즐길 수 있어요.|바닷가에서 피시 앤드 칩스나 커피를 맛보세요.|서큘러 키 → 오페라 하우스와 다리 전망 → 오후 본다이.
+멜버른|Melbourne|AU|예술 미식 건축|전차가 지나는 대로에서 한 걸음 들어가면 벽화 골목과 카페가 보여요.|페더레이션 스퀘어~Federation Square~강 가까이의 광장과 문화 시설이에요.;호시어 레인~Hosier Lane~벽면에 거리 예술이 겹겹이 더해지는 골목이에요.;퀸 빅토리아 마켓~Queen Victoria Market~식재료와 간식을 볼 수 있는 시장이에요.|카페에서 플랫 화이트를 맛보세요.|시장 → 페더레이션 스퀘어 → 호시어 레인 → 야라강 산책.
+퀸스타운|Queenstown, New Zealand|NZ|자연 해안|와카티푸 호수와 산맥이 가까워 언제든 풍경 산책을 시작할 수 있어요.|와카티푸 호수~Lake Wakatipu~도심 접안장 근처에서 산과 호수 풍경이 펼쳐져요.;퀸스타운 가든~Queenstown Gardens~호수로 나온 반도를 걷는 정원 길이에요.;밥스 피크~Skyline Queenstown~곤돌라 전망대에서 호수와 마을을 함께 내려다보세요.|와카티푸 호숫가에서 가벼운 점심을 즐겨보세요.|호숫가 산책 → 퀸스타운 가든 → 전망대.
+수바|Suva|FJ|해안 역사 자연|항구 도시의 시장과 박물관, 넓은 녹지에서 피지의 일상과 역사를 만나봐요.|피지 박물관~Fiji Museum~카누와 지역 문화 유물이 있는 박물관이에요.;서스턴 가든~Thurston Gardens~박물관과 맞닿은 도심의 식물원이자 쉼터예요.;수바 항구~Suva Harbour~도시 중심부에서 만과 항구의 풍경을 볼 수 있어요.|코코넛과 라임을 넣은 생선 요리 코콘다를 찾아보세요.|박물관 → 서스턴 가든 → 항구 쪽 산책.
+파페에테|Papeete|PF|해안 미식|타히티의 항구에서 시장 풍경과 폴리네시아 생활 문화를 만나요.|파페에테 시장~Papeete Market~과일과 꽃, 생활 물건을 함께 볼 수 있는 시장이에요.;파오파이 정원~Paofai Gardens~항구 옆 산책로와 잔디가 있는 도심 공원이에요.;포인트 비너스~Point Venus~도시 북동쪽의 검은 모래 해안이에요.|라임과 코코넛을 곁들인 푸아송 크뤼를 맛보세요.|시장 → 파오파이 해안 산책 → 오후 포인트 비너스.
+남극반도|Antarctic Peninsula|AQ|자연 해안|푸른 얼음, 암벽과 눈이 겹치는 남극의 바다예요. 소개한 장소는 탐험선 기항 후보이며 방문은 선박 일정과 현지 조건에 따라 달라져요.|르메르 해협~Lemaire Channel~좁은 물길 양쪽으로 눈 덮인 산과 빙하가 이어져요.;포트 록로이~Port Lockroy~옛 연구기지와 남극 방문의 역사를 볼 수 있는 곳이에요.;파라다이스 항~Paradise Harbor~물 위로 빙벽과 설산이 솟아 있고 작은 배에서 경치를 볼 수 있어요.|상륙이 가능한 경우 안내에 따라 펭귄과 주변 서식지를 관찰해요.|해협 항해 → 기항지 주변 관찰 → 선상에서 빙하 감상. 실제 당일 동선은 탐험선이 결정해요.
+사우스셰틀랜드 제도|South Shetland Islands|AQ|자연 해안|남극반도 북쪽의 섬들로, 해안 풍경과 화산 지형을 함께 볼 수 있어요.|디셉션섬~Deception Island~화산 칼데라로 들어서는 물길과 검은 해변이 특징이에요.;리빙스턴섬~Livingston Island~눈과 얼음이 덮인 산지가 두드러져요.;킹조지섬~King George Island (South Shetland Islands)~여러 나라의 연구기지가 위치한 섬이에요.|선상에서 해안 조류나 물개를 관찰해 보세요.|디셉션섬 주변 항해와 해안 관찰을 한 장면으로 묶어 보세요. 상륙 여부는 날씨와 선박 일정에 따라 달라져요.
+키토|Quito|EC|역사 건축 자연|안데스 계곡을 따라 펼쳐진 도시로, 언덕에서 내려다보는 풍경과 오래된 도심의 골목이 다채로워요.|독립 광장~Plaza Grande, Quito~대성당과 정부 청사가 둘러싼 구시가지 중심 광장이에요.;라 콤파니아 성당~Church of the Society of Jesus, Quito~내부 바로크 장식과 금박 세공이 두드러져요.;엘 파네시요~El Panecillo~구시가지 남쪽 언덕에서 산과 도시를 함께 내려다봐요.|감자 수프 로크로 데 파파와 에콰도르식 초콜릿을 맛보세요.|독립 광장 → 라 콤파니아 성당 → 오후 엘 파네시요 전망.
+다카르|Dakar|SN|해안 예술 역사|대서양에 면한 세네갈 수도로, 페리로 닿는 섬과 도심 박물관이 서로 다른 역사를 들려줘요.|고레섬~Gorée~석조 골목과 대서양 노예무역의 역사를 만나는 섬이에요.;흑인문명박물관~Museum of Black Civilisations~아프리카와 디아스포라의 문화와 예술을 살펴봐요.;아프리카 르네상스 기념상~African Renaissance Monument~언덕 위의 큰 기념 조각이에요.|생선과 쌀로 만든 체부젠을 맛보세요.|페리로 고레섬 → 도심으로 돌아와 박물관 → 일정에 여유가 있으면 기념상.
+웰링턴|Wellington|NZ|해안 예술 자연|항구와 녹색 언덕 사이로 자리한 도시예요. 수변 산책과 박물관 관람을 한 동선으로 묶기 좋아요.|테 파파 박물관~Museum of New Zealand Te Papa Tongarewa~뉴질랜드의 자연사와 마오리 문화를 함께 다루는 박물관이에요.;웰링턴 케이블카~Wellington Cable Car~도심과 언덕 위 전망 지대를 잇는 교통수단이에요.;웰링턴 식물원~Wellington Botanic Garden~언덕을 따라 온실과 산책길이 이어져요.|수변 카페에서 커피와 간단한 점심을 즐겨보세요.|테 파파 → 해안 산책로 → 케이블카 → 식물원.
+</script>
+<script>
+const groups={
+ "아시아":"AF AM AZ BH BD BT BN KH CN CY GE HK IN ID IR IQ IL JP JO KZ KP KR KW KG LA LB MO MY MV MN MM NP OM PK PS PH QA SA SG LK SY TW TJ TH TL TR TM AE UZ VN YE",
+ "유럽":"AL AD AT BY BE BA BG HR CZ DK EE FO FI FR DE GI GR GG VA HU IS IE IM IT JE LV LI LT LU MT MD MC ME NL MK NO PL PT RO RU SM RS SK SI ES SJ SE CH UA GB AX",
+ "북아메리카":"AI AG AW BS BB BZ BM BQ VG CA KY CR CU CW DM DO SV GL GD GP GT HT HN JM MQ MX MS NI PA PR BL KN LC MF PM VC SX TT TC US VI",
+ "남아메리카":"AR BO BR CL CO EC FK GF GY PY PE GS SR UY VE",
+ "아프리카":"DZ AO BJ BW BF BI CV CM CF TD KM CG CD DJ EG GQ ER SZ ET GA GM GH GN GW CI KE LS LR LY MG MW ML MR MU YT MA MZ NA NE NG RE RW SH ST SN SC SL SO ZA SS SD TZ TG TN UG EH ZM ZW IO",
+ "오세아니아":"AS AU CX CC CK FJ PF GU HM KI MH FM NR NC NZ NU NF MP PW PG PN WS SB TK TO TV UM VU WF",
+ "남극":"AQ BV TF"
+};
+const $=id=>document.getElementById(id);
+const regions=Object.keys(groups);
+const ko=new Intl.DisplayNames(["ko"],{type:"region"});
+const en=new Intl.DisplayNames(["en"],{type:"region"});
+const countries=regions.flatMap(region=>groups[region].split(" ").map(code=>({id:code,code,region,name:ko.of(code),en:en.of(code),country:true})))
+ .sort((a,b)=>a.name.localeCompare(b.name,"ko"));
+const countryMap=new Map(countries.map(x=>[x.code,x]));
+const guides=$("guideData").textContent.trim().split("\n").map(line=>{
+ const [name,en,code,tags,intro,landmarks,food,plan]=line.trim().split("|");
+ const stops=landmarks.split(";").map(stop=>{const [label,wiki,note]=stop.split("~");return {label,wiki,note};});
+ return {id:en,name,en,code,region:countryMap.get(code).region,tags:tags.split(" "),intro,stops,food,plan};
+});
+const items=new Map([...countries,...guides].map(x=>[x.id,x]));
+const E=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const enc=encodeURIComponent;
+const link=(name,url)=>'<a href="'+E(url)+'" target="_blank" rel="noopener noreferrer">'+E(name)+' ↗</a>';
+const map=q=>"https://www.google.com/maps/search/?api=1&query="+enc(q);
+const travel=q=>"https://en.wikivoyage.org/wiki/Special:Search?search="+enc(q);
+const flight="https://www.skyscanner.co.kr/flights";
+const stays="https://www.booking.com/index.ko.html";
+const rail="https://www.omio.com/";
+const tours="https://www.klook.com/ko/";
+const agoda="https://www.agoda.com/ko-kr/";
+const providers=[
+ ["항공권",[["스카이스캐너",flight],["Google 항공편","https://www.google.com/travel/flights?hl=ko&curr=KRW"]]],
+ ["숙소",[["부킹닷컴",stays],["아고다",agoda]]],
+ ["기차·버스",[["Omio",rail]]],
+ ["현지 투어",[["클룩",tours],["Tripadvisor","https://www.tripadvisor.com/Attractions"]]]
+];
+$("quick").innerHTML=providers.map(([title,links])=>link(title,links[0][1])).join("");
+$("reserve").innerHTML=providers.map(([title,links])=>"<article><h3>"+title+"</h3><div class='links'>"+links.map(([name,url])=>link(name,url)).join("")+"</div></article>").join("");
+$("coverage").textContent=countries.length+"개 국가·지역 색인과 "+guides.length+"곳의 한국어 여행 가이드";
+const readSaved=()=>{
+ try {const data=JSON.parse(localStorage.getItem("world-window-saved")||"[]");return new Set(Array.isArray(data)?data.filter(id=>items.has(id)):[]);}
+ catch{return new Set();}
+};
+const saved=readSaved();
+const state={mode:"guides",region:"",limit:9};
+const photoCache=new Map([
+ ["Prague",["https://upload.wikimedia.org/wikipedia/commons/4/47/View_from_Charles_Bridge_Vltava_panorama.JPG","https://commons.wikimedia.org/wiki/File:View_from_Charles_Bridge_Vltava_panorama.JPG","Janmad · CC BY 3.0"]]
+]);
+photoCache.set("Prague Castle",["https://upload.wikimedia.org/wikipedia/commons/4/4c/Prague_Castle_from_Charles_Bridge_panorama.JPG","https://commons.wikimedia.org/wiki/File:Prague_Castle_from_Charles_Bridge_panorama.JPG","Janmad · CC BY 3.0"]);
+photoCache.set("Charles Bridge",["https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Charles_Bridge_-_panorama.jpg/1280px-Charles_Bridge_-_panorama.jpg","https://commons.wikimedia.org/wiki/File:Charles_Bridge_-_panorama.jpg","Wikimedia Commons 사진 정보"]);
+photoCache.set("Barcelona",["https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Barcelona_panorama_from_Parc_G%C3%BCell.jpg/3840px-Barcelona_panorama_from_Parc_G%C3%BCell.jpg","https://commons.wikimedia.org/wiki/File:Barcelona_panorama_from_Parc_G%C3%BCell.jpg","Till Niermann · CC BY-SA 3.0"]);
+const inflight=new Map();
+async function retrievePhotos(titles){
+ const parameters=new URLSearchParams({action:"query",prop:"pageimages",piprop:"thumbnail|name",pithumbsize:"800",pilicense:"free",redirects:"1",titles:titles.join("|"),origin:"*",format:"json",formatversion:"2"});
+ try{
+  const response=await fetch("https://en.wikipedia.org/w/api.php?"+parameters,{signal:AbortSignal.timeout(9000)});
+  if(!response.ok)return;
+  const {query}=await response.json();
+  const redirects=new Map([...(query?.normalized||[]),...(query?.redirects||[])].map(x=>[x.from,x.to]));
+  for(const title of titles){
+   const normalized=redirects.get(title)||title;
+   const page=query?.pages?.find(x=>x.title===(redirects.get(normalized)||normalized));
+   if(page?.thumbnail?.source?.startsWith("https://upload.wikimedia.org/")&&page.pageimage)photoCache.set(title,
+     [page.thumbnail.source,"https://commons.wikimedia.org/wiki/File:"+enc(page.pageimage),"Wikimedia Commons 사진 정보"]);
+  }
+ }catch{}
+}
+async function hydrate(root){
+ const nodes=[...root.querySelectorAll("[data-photo]")];
+ const needed=[...new Set(nodes.map(x=>x.dataset.photo).filter(title=>!photoCache.has(title)&&!inflight.has(title)))];
+ if(needed.length){
+  const request=retrievePhotos(needed).finally(()=>needed.forEach(title=>inflight.delete(title)));
+  needed.forEach(title=>inflight.set(title,request));
+ }
+ await Promise.allSettled(nodes.map(node=>inflight.get(node.dataset.photo)));
+ for(const node of nodes){
+  const photo=photoCache.get(node.dataset.photo);
+  if(!node.isConnected||!photo||node.querySelector("img"))continue;
+  const image=new Image();
+  image.alt=node.dataset.alt;
+  image.loading="lazy";
+  image.onerror=()=>image.remove();
+  image.onload=()=>{
+   const credit=node.querySelector(".credit");
+   if(credit){credit.hidden=false;credit.href=photo[1];credit.textContent=photo[2]+" ↗";}
+  };
+  node.prepend(image);
+  image.src=photo[0];
+ }
+}
+function visual(kind,title,label,tone){
+ return '<span class="'+kind+'" data-photo="'+E(title)+'" data-title="'+E(title)+'" data-alt="'+E(label)+'" data-tonal="'+E(tone)+'">'+
+  (kind==="scene"?'<a class="credit" target="_blank" rel="noopener noreferrer" hidden></a>':"")+"</span>";
+}
+function chip(field,id,label,active){
+ return '<button type="button" class="chip" data-'+field+'="'+E(id)+'" aria-pressed="'+active+'">'+E(label)+'</button>';
+}
+function heart(item){
+ const active=saved.has(item.id);
+ return '<button class="heart" type="button" data-save="'+E(item.id)+'" aria-pressed="'+active+'" aria-label="'+E(item.name+(active?" 저장 해제":" 저장"))+'">'+(active?"♥":"♡")+'</button>';
+}
+const aliases={KR:"한국",GB:"영국 UK",US:"미국 USA",CZ:"체코 체키아 Czech Republic",TW:"대만 Taiwan",TR:"터키 Turkey",AE:"UAE",HK:"홍콩",CI:"아이보리코스트 Ivory Coast"};
+const normalize=x=>x.toLowerCase().normalize("NFKD").replace(/\p{M}/gu,"");
+function render(){
+ $("savedTotal").textContent=saved.size;
+ $("modes").innerHTML=[["guides","여행 가이드"],["countries","국가·지역"],["saved","저장한 곳"]].map(([id,label])=>chip("mode",id,label,state.mode===id)).join("");
+ $("regions").innerHTML=["",...regions].map(id=>chip("region",id,id||"전 세계",state.region===id)).join("");
+ const term=$("search").value.trim(), words=normalize(term).split(/\s+/).filter(Boolean), tag=$("theme").value;
+ $("theme").disabled=state.mode==="countries";
+ const pool=state.mode==="countries"?countries:state.mode==="saved"?[...saved].map(id=>items.get(id)):words.length&&!tag?[...guides,...countries]:guides;
+ const found=pool.filter(item=>{
+  const country=countryMap.get(item.code);
+  const haystack=normalize([item.name,item.en,country.name,country.en,aliases[item.code],item.region,item.intro,item.tags?.join(" "),item.stops?.map(s=>s.label).join(" ")].join(" "));
+  return (!state.region||item.region===state.region)&&(!tag||state.mode==="countries"||item.tags?.includes(tag)||(tag==="미술관·박물관"&&item.stops?.some(s=>/미술관|박물관/.test(s.label))))&&words.every(word=>haystack.includes(word));
+ });
+ $("count").textContent=found.length+"곳";
+ $("cards").innerHTML=found.slice(0,state.limit).map(item=>{
+  const country=countryMap.get(item.code);
+  return '<article class="card '+(item.country?"country":"")+'"><button type="button" class="main-card" data-open="'+E(item.id)+'">'+
+   (item.country?"":visual("cover",item.en,item.name+" 대표 풍경",item.tags[0]))+
+   '<span class="copy"><small>'+E(item.country?item.region:country.name+" · "+item.tags.join(" · "))+'</small><h3>'+E(item.name)+'</h3><p>'+E(item.intro||item.en)+'</p></span></button>'+heart(item)+'</article>';
+ }).join("")||'<div class="empty">'+(state.mode==="saved"&&!saved.size?"여행지 카드의 ♡를 누르면 여기에 모여요.":"조건에 맞는 곳이 없어요. 검색어나 대륙을 바꿔 보세요.")+
+  (term?" "+link("Wikivoyage에서도 검색",travel(term)):"")+'</div>';
+ $("more").hidden=found.length<=state.limit;
+ hydrate($("cards"));
+}
+let current,sceneIndex=0;
+function renderScene(){
+ const scenes=[{label:current.name,wiki:current.en},...(current.stops||[])];
+ const scene=scenes[sceneIndex];
+ $("sceneBox").innerHTML=visual("scene",scene.wiki,scene.label,current.tags?.[0]);
+ $("sceneText").textContent=(scenes.length>1?(sceneIndex+1)+" / "+scenes.length+" · ":"")+scene.label+(scene.note?" · "+scene.note:"");
+ $("sceneMap").href=map(scene.label+" "+current.en);
+ $("scenePhotos").href="https://commons.wikimedia.org/wiki/Special:MediaSearch?type=image&search="+enc(scene.wiki);
+ $("backScene").disabled=sceneIndex===0;
+ $("nextScene").disabled=sceneIndex===scenes.length-1;
+ hydrate($("sceneBox"));
+}
+function openDetail(id){
+ const item=items.get(id);
+ if(!item)return;
+ current=item;sceneIndex=0;
+ const country=countryMap.get(item.code);
+ const related=guides.filter(x=>x.code===item.code&&x.id!==id);
+ const cityInfo=item.stops?'<section class="detail-cols"><div><h3>들러볼 곳</h3><ol>'+
+  item.stops.map(s=>"<li>"+link(s.label,map(s.label+" "+item.en))+"<small>"+E(s.note)+"</small></li>").join("")+
+  '</ol></div><div><h3>하루 동선</h3><p>'+E(item.plan)+'</p><h3 style="margin-top:13px">현지에서 맛보기</h3><p>'+E(item.food)+'</p></div></section>':"";
+ const booking=item.code==="AQ"?'<p>남극 여행의 출발 항구와 탐험선 정보는 여행 안내에서 확인할 수 있어요.</p>':
+  '<div class="links">'+link(item.name+" 숙소 검색","https://www.booking.com/searchresults.ko.html?ss="+enc(item.en))+
+  link("아고다",agoda)+link("항공권 비교",flight)+link("서울 출발 Google 항공편","https://www.google.com/travel/flights/flights-from-seoul.html?hl=ko&curr=KRW")+
+  link("기차·버스",rail)+link("현지 투어",tours)+'</div>';
+ const official=item.id==="Prague"?link("프라하 관광청","https://prague.eu/en/home/discover/one-day-in-prague-you-wont-want-to-leave/"):
+  item.id==="Barcelona"?link("바르셀로나 관광청","https://www.barcelonaturisme.com/wv3/en/page/5825/gaudi-beyond-the-sagrada-familia-.html"):"";
+ $("detailContent").innerHTML='<div id="sceneBox"></div><div class="detail-body"><div class="meta">'+E(item.region+(item.country?"":" · "+country.name))+
+  '</div><h2 id="detailTitle">'+E(item.name)+'</h2><p>'+E(item.intro||item.en+"의 지도, 여행 정보와 관련 여행지를 둘러보세요.")+
+  '</p><div class="scene-controls"><span id="sceneText" aria-live="polite"></span><span class="links" '+(item.country?"hidden":"")+'><button type="button" id="backScene" class="btn" aria-label="이전 장면">←</button><button type="button" id="nextScene" class="btn" aria-label="다음 장면">→</button></span></div>'+
+  '<div class="links"><a id="sceneMap" target="_blank" rel="noopener noreferrer">장면 지도 ↗</a><a id="scenePhotos" target="_blank" rel="noopener noreferrer">장면 사진 더 보기 ↗</a><button class="btn" id="detailSave" data-save="'+E(id)+'" aria-pressed="'+saved.has(id)+'">'+(saved.has(id)?"♥ 저장됨":"♡ 여행지 저장")+'</button></div>'+cityInfo+
+  (related.length?'<section><h3>같은 나라에서 둘러보기</h3><div class="links">'+related.map(x=>'<button type="button" class="btn" data-open="'+E(x.id)+'">'+E(x.name)+'</button>').join("")+'</div></section>':"")+
+  '<section><h3>여행 자료</h3><div class="links">'+link("Wikivoyage 여행 안내",travel(item.en))+link("Google 지도",map(item.en))+official+(item.code==="AQ"?link("IAATO 방문 안내","https://iaato.org/visiting-antarctica/during-your-visit"):"")+'</div></section><section><h3>예약 사이트</h3>'+booking+'</section></div>';
+ $("backScene").onclick=()=>{if(sceneIndex>0){sceneIndex--;renderScene();}};
+ $("nextScene").onclick=()=>{if(sceneIndex<(item.stops?.length||0)){sceneIndex++;renderScene();}};
+ if(!$("detail").open)$("detail").showModal();
+ $("detail").scrollTop=0;
+ renderScene();
+}
+function changeMode(mode){
+ state.mode=mode;state.region="";state.limit=9;$("search").value="";$("theme").value="";render();
+}
+document.addEventListener("click",event=>{
+ const button=event.target.closest("button");
+ if(!button)return;
+ const {open,mode,region,save}=button.dataset;
+ if(open){openDetail(open);return;}
+ if(mode){changeMode(mode);return;}
+ if(region!==undefined){state.region=region;state.limit=9;render();return;}
+ if(save){
+  if(saved.has(save))saved.delete(save);else saved.add(save);
+  try{localStorage.setItem("world-window-saved",JSON.stringify([...saved]));}catch{}
+  render();
+  if($("detailSave")?.dataset.save===save){
+   $("detailSave").textContent=saved.has(save)?"♥ 저장됨":"♡ 여행지 저장";
+   $("detailSave").setAttribute("aria-pressed",saved.has(save));
+  }
+ }
+});
+$("savedNav").onclick=()=>{changeMode("saved");$("explore").scrollIntoView();};
+$("search").oninput=()=>{state.limit=9;render();};
+$("theme").onchange=()=>{state.limit=9;render();};
+$("more").onclick=()=>{state.limit+=12;render();};
+$("close").onclick=()=>$("detail").close();
+$("detail").onclick=event=>{if(event.target===$("detail"))$("detail").close();};
+render();
+</script></body></html>
